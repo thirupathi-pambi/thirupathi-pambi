@@ -1,29 +1,31 @@
 # Hi, I'm Thirupathi Pambi 👋
 
-Healthcare IT professional building portfolio projects at the intersection of **clinical data**, **interoperability**, and **Python automation**.
+Healthcare IT professional building small, tested Python tools for **interoperability, EHR data quality, and operations reporting**.
 
----
+## What I work on
 
-## Portfolio Projects
+- **Interoperability:** HL7 v2 and FHIR R4 parsing, validation, and transformation
+- **Data quality:** automated audits of patient and encounter data
+- **Analytics:** operational KPIs with Python and SQL
+- **IT risk:** asset prioritization and security risk registers
 
-| Repo | What it does |
+## Projects
+
+All projects use synthetic data, run on the Python standard library, and include tests.
+
+| Project | What it does |
 |---|---|
-| [fhir-r4-patient-observation-etl](https://github.com/thirupathi-pambi/fhir-r4-patient-observation-etl) | Extract FHIR R4 Bundle resources, resolve Patient references, export observations to CSV |
-| [hl7v2-adt-message-validator](https://github.com/thirupathi-pambi/hl7v2-adt-message-validator) | Parse and validate HL7 v2 ADT messages; check MSH/PID/PV1 segments; export JSON audit report |
-| [ehr-data-quality-automation](https://github.com/thirupathi-pambi/ehr-data-quality-automation) | Audit EHR demographics and encounters for missing IDs, duplicates, and invalid dates |
-| [healthcare-operations-analytics](https://github.com/thirupathi-pambi/healthcare-operations-analytics) | Calculate clinic no-show and cancellation KPIs; generate HTML dashboard and SQL queries |
-| [healthcare-security-risk-register](https://github.com/thirupathi-pambi/healthcare-security-risk-register) | Score and track healthcare IT security risks on a likelihood × impact matrix |
-| [healthcare-it-asset-risk-prioritization](https://github.com/thirupathi-pambi/healthcare-it-asset-risk-prioritization) | Risk-score IT assets by OS support status and condition; output prioritization CSV and HTML |
+| [fhir-r4-patient-observation-etl](https://github.com/thirupathi-pambi/fhir-r4-patient-observation-etl) | Flattens FHIR R4 Bundles into analytics-ready CSV |
+| [hl7v2-adt-message-validator](https://github.com/thirupathi-pambi/hl7v2-adt-message-validator) | Validates HL7 v2 ADT messages and reports errors/warnings as JSON |
+| [ehr-data-quality-automation](https://github.com/thirupathi-pambi/ehr-data-quality-automation) | Audits patient/encounter data and builds an issue register |
+| [healthcare-operations-analytics](https://github.com/thirupathi-pambi/healthcare-operations-analytics) | Appointment KPIs with SQL and an HTML dashboard |
+| [healthcare-security-risk-register](https://github.com/thirupathi-pambi/healthcare-security-risk-register) | Likelihood × impact risk scoring and remediation tracking |
+| [healthcare-it-asset-risk-prioritization](https://github.com/thirupathi-pambi/healthcare-it-asset-risk-prioritization) | Ranks IT assets for refresh by support status and condition |
 
-> All repositories use synthetic/fictional data only. No real patient records, PHI, or employer data.
+## Skills
 
----
+`Python` · `SQL` · `HL7 v2` · `FHIR R4` · `ETL` · `Data quality` · `Healthcare analytics` · `Risk scoring`
 
-## Skills & Interests
+## Contact
 
-`Python` · `FHIR R4` · `HL7 v2` · `EHR Systems` · `Data Quality` · `Healthcare Analytics`  
-`SQL` · `ETL` · `Security & Compliance` · `IT Operations` · `HIPAA-aware workflows`
-
----
-
-*Portfolio projects are personal demonstrations of technical skills. They are not implementations at any employer.*
+[LinkedIn](https://www.linkedin.com/in/your-profile)
