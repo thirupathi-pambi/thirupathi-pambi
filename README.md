@@ -26,6 +26,4 @@ All projects use synthetic data, run on the Python standard library, and include
 
 `Python` · `SQL` · `HL7 v2` · `FHIR R4` · `ETL` · `Data quality` · `Healthcare analytics` · `Risk scoring`
 
-## Contact
 
-[LinkedIn](https://www.linkedin.com/in/your-profile)
