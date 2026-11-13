@@ -1,29 +1,29 @@
-# Hi, I'm Thirupathi Pambi 👋
+# Thirupathi Pambi
 
-Healthcare IT professional building small, tested Python tools for **interoperability, EHR data quality, and operations reporting**.
+I work in healthcare IT. Most of what's here is small Python tools built around problems that come up between clinical systems: messages that don't parse, patient data that doesn't add up, and reports nobody fully trusts.
 
-## What I work on
+Every project uses made-up data, runs on plain Python with nothing to install, and has unit tests. In each README I've written down the decisions I made and what I'd add next.
 
-- **Interoperability:** HL7 v2 and FHIR R4 parsing, validation, and transformation
-- **Data quality:** automated audits of patient and encounter data
-- **Analytics:** operational KPIs with Python and SQL
-- **IT risk:** asset prioritization and security risk registers
+## Interoperability
 
-## Projects
+- **[hl7v2-adt-message-validator](https://github.com/thirupathi-pambi/hl7v2-adt-message-validator)**: Parses HL7 v2 ADT messages and flags missing segments and fields. It also handles the MSH-1 separator quirk that trips up a lot of hand-written parsers.
+- **[fhir-r4-patient-observation-etl](https://github.com/thirupathi-pambi/fhir-r4-patient-observation-etl)**: Takes a FHIR R4 Bundle, links each Observation back to its Patient, and writes one flat CSV row per result.
 
-All projects use synthetic data, run on the Python standard library, and include tests.
+## Data quality
 
-| Project | What it does |
-|---|---|
-| [fhir-r4-patient-observation-etl](https://github.com/thirupathi-pambi/fhir-r4-patient-observation-etl) | Flattens FHIR R4 Bundles into analytics-ready CSV |
-| [hl7v2-adt-message-validator](https://github.com/thirupathi-pambi/hl7v2-adt-message-validator) | Validates HL7 v2 ADT messages and reports errors/warnings as JSON |
-| [ehr-data-quality-automation](https://github.com/thirupathi-pambi/ehr-data-quality-automation) | Audits patient/encounter data and builds an issue register |
-| [healthcare-operations-analytics](https://github.com/thirupathi-pambi/healthcare-operations-analytics) | Appointment KPIs with SQL and an HTML dashboard |
-| [healthcare-security-risk-register](https://github.com/thirupathi-pambi/healthcare-security-risk-register) | Likelihood × impact risk scoring and remediation tracking |
-| [healthcare-it-asset-risk-prioritization](https://github.com/thirupathi-pambi/healthcare-it-asset-risk-prioritization) | Ranks IT assets for refresh by support status and condition |
+- **[ehr-data-quality-automation](https://github.com/thirupathi-pambi/ehr-data-quality-automation)**: Checks patient and encounter files for duplicate IDs, bad dates and orphaned encounters, and writes an issue list someone can work through.
+- **[clinical-trial-data-management](https://github.com/thirupathi-pambi/clinical-trial-data-management)**: Tracks study visit completion and raises queries for incomplete adverse event records. Includes a SQL version of the visit metrics.
 
-## Skills
+## Testing and go-live
 
-`Python` · `SQL` · `HL7 v2` · `FHIR R4` · `ETL` · `Data quality` · `Healthcare analytics` · `Risk scoring`
+- **[ehr-upgrade-uat-framework](https://github.com/thirupathi-pambi/ehr-upgrade-uat-framework)**: A UAT tracker for an EHR upgrade. It reports pass rates by module and open defects, and gives a release gate that won't say "ready" while anything is failed, blocked or not run.
 
+## Operations and risk
 
+- **[healthcare-operations-analytics](https://github.com/thirupathi-pambi/healthcare-operations-analytics)**: Clinic no-show and cancellation rates, calculated in both Python and SQL, plus a static HTML dashboard.
+- **[healthcare-security-risk-register](https://github.com/thirupathi-pambi/healthcare-security-risk-register)**: Scores security findings on likelihood × impact and lists the high risks that are still open.
+- **[healthcare-it-asset-risk-prioritization](https://github.com/thirupathi-pambi/healthcare-it-asset-risk-prioritization)**: Ranks clinic devices for replacement based on condition, Windows 10 status and age.
+
+## Tools I use
+
+Python, SQL, HL7 v2, FHIR R4, CSV/JSON pipelines, unittest
